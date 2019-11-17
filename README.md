@@ -1,6 +1,10 @@
 # cse-571-Group-1
 Maze Solving algorithm
 
+IF YOU ARE ON BRANCH robot_setup, start the project with:
+execute catkin_make from catkin folder
+roslaunch cse-571-Group-1 maze.launch 
+
 Maze Plugin: Gzmaze (https://github.com/athenian-programming/gzmaze)
 Requirements
 
