@@ -9,10 +9,10 @@
 namespace gazebo
 {
 
-const float MazePlugin::UNIT = 0.18; //distance between centers of squares
+const float MazePlugin::UNIT = 0.36;  // 0.18; //distance between centers of squares
 // PRA Increase WALL_HEIGHT
 const float MazePlugin::WALL_HEIGHT = 0.25;
-const float MazePlugin::WALL_LENGTH = 0.192;
+const float MazePlugin::WALL_LENGTH = 0.384;  // 0.192;
 const float MazePlugin::WALL_THICKNESS = 0.012;
 const float MazePlugin::BASE_HEIGHT= 0.005;
 const float MazePlugin::PAINT_THICKNESS = 0.01;
@@ -44,7 +44,7 @@ void MazePlugin::Regenerate(ConstGzStringPtr &msg)
 
   model->GetAttribute("name")->Set("my_maze");
   model->GetElement("pose")->Set(
-    math::Pose(math::Vector3(0, 0, 0), math::Quaternion(0, 0, 0)));
+    math::Pose(math::Vector3(2.7, 2.7, 0), math::Quaternion(0, 0, 0)));
   parent->InsertModelSDF(*modelSDF);
 }
 
